@@ -2,9 +2,7 @@
   description =
     "A flake giving access to fonts that I use, outside of nixpkgs.";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  # inputs.bahij = "./bahij";
 
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
